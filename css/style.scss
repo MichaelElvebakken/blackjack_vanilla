@@ -42,10 +42,10 @@ body {
     max-width: 30rem;
     background-color: #fff;
     position: absolute;
-    
+    top: 25vh;
+
     z-index: 2;
     margin: auto;
-    top: 25vh;
     left: 0;
     right: 0;
     text-align: center;
@@ -63,6 +63,14 @@ body {
         border-radius: 0;
         border: 2px solid gray;
         height: auto;
+
+        width: 50%;
+        margin: 20px 0;
+        border-radius: 0;
+        border: 2px solid gray;
+        width: 50%;
+        height: 10%;
+
         font-size: 2rem;
         text-align: center;
     }
@@ -95,9 +103,6 @@ body {
     width: 30%;
 }
 
-.left-side-bar {
-
-}
 .right-side-bar {
     display:flex;
 
@@ -135,6 +140,7 @@ body {
     flex-direction: column;
     justify-content: space-between;
     align-content: space-between;
+    height: 100vh;
     margin: 0 auto;
     .hands {
         margin: 10px auto;
@@ -162,12 +168,6 @@ body {
             height: 50px;
             margin: 10px;
         }
-        #button-hit {
-
-        }
-        #button-stand {
-
-        }
     }
 }
 
@@ -185,4 +185,4 @@ body {
     #table {
         width: 100%;
     }
-  }
+}
