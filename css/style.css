@@ -113,11 +113,8 @@ body {
 }
 
 #bet-screen #bet-range .bet-range-span img {
-  max-width: 100px;
-  max-height: 100px;
   width: 100%;
   height: auto;
-  min-width: 3.1rem;
 }
 
 #bet-screen #bet-range input[type="button"] {
