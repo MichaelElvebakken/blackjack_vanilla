@@ -1,0 +1,247 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: grid;
+}
+
+#message-display {
+    display: none;
+    flex-direction: column;
+    text-align: center;
+
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+
+    position: absolute;
+    background-color: #000000cc;
+
+    span {
+        width: 70%;
+        height: 50%;
+        margin: auto;
+        position: absolute;
+
+        left: 0;
+        right: 0;
+        bottom: 0;
+        top: 0;
+    }
+    h2 {
+        font-size: 5rem;
+        color: red;
+    }
+    input {
+        height: 6rem;
+        width: 12rem;
+        font-size: 2rem;
+
+        border: none;
+        background-color: #34d8eb;
+        outline: none;
+        color: white;
+    }
+}
+
+#start-screen {
+    position: absolute;
+    background-color: white;
+    border: 2px solid gray;
+    margin: auto;
+    padding: 2rem;
+
+    text-align: center;
+
+    display: grid;
+    gap: 1rem;
+    
+    max-width: 30rem;
+    max-height: 35rem;
+
+
+    left: 0;
+    right: 0;
+    top:0;
+    bottom: 0;
+
+    input {
+        font-size: 1.8rem;
+        width: 80%;
+        margin: auto;
+        height: 2em;
+        text-align: center;
+    }
+
+}
+
+#bet-screen {
+    position: absolute;
+    background-color: white;
+    border: 2px solid gray;
+    margin: auto;
+    padding: 2rem;
+
+    text-align: center;
+
+    display: none;
+    gap: 1rem;
+    place-items: center;
+    
+    max-width: 30rem;
+    max-height: 40rem;
+
+
+    left: 0;
+    right: 0;
+    top:0;
+    bottom: 0;
+
+    #bet-range {
+        display: flex;
+        width: 100%;
+        gap: 1rem;
+        .bet-range-span {
+            display: flex;
+            flex-direction: column;
+
+
+            img {
+                max-width: 100px;
+                max-height: 100px;
+                width: 100%;
+                height: auto;
+                min-width: 3.1rem;
+            }
+        }
+        input[type="button"] {
+            max-width: 100px;
+            max-height: 100px;
+            width: 100%;
+            height: auto;
+            min-height: 3.1rem;
+            min-width: 3.1rem;
+
+            border: none;
+            background-color: #46a63d;
+
+            font-size: 2.5rem;
+            color: white;
+        }
+
+    }
+
+    #bet-size-input {
+        border: none;
+        border-bottom: 2px solid gray;
+        font-size: 2.3rem;
+
+        max-height: 2.5rem;
+        width: 70%;
+
+        text-align: center;
+
+        &:focus {
+            outline: none;
+        }
+    }
+
+    #bet-button {
+        width: 90%;
+        height: 4rem;
+        background-color: #46a63d;
+        border: none;
+        font-size: 2.5rem;
+        color: white;
+    }
+}
+
+#table {
+    width:100%;
+    background-color: green;
+    display: flex;
+    flex-direction: column;
+    justify-self: center;
+    justify-content: center;
+    align-content: space-evenly;
+
+    max-width: 1000px;
+    min-height: 90vh;
+    padding-bottom: 10vh;
+
+    .hand-images {
+        width: 100%;
+        max-height: 50%;
+    }
+
+    .hands {
+        width: 100%;
+        text-align: center;
+        margin: 1rem 0;
+        img {
+            width: 20%;
+            max-height: 20%;
+            max-width: 7rem;
+        }
+        h2 {
+            margin: 1rem;
+            color: white;
+        }
+    }
+}
+.player-options {
+    display: none;
+    place-items: center;
+    grid-template-columns: 1fr 1fr;
+
+    position: absolute;
+    bottom: 1rem;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+
+    width: 100%;
+    height: 10vh;
+    max-width: 1000px;
+    
+    button {
+        border: 2px solid black;
+        max-width: 20rem;
+        font-size: 2rem;
+        width: 70%;
+        height: 100%;
+    }
+}
+
+#money-bet {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 30%;
+    h2 {
+        color: white;
+        font-size: 2rem;
+    }
+    #new-bet-button {
+        display: none;
+        width: 10rem;
+        height: 5rem;
+        font-size: 2rem;
+
+        border: none;
+        background-color: #34d8eb;
+        outline: none;
+        color: white;
+    }    
+}
+input[type="button"] {
+    transform: scale(1);
+    &:active {
+        transform: scale(0.9);
+    }
+}

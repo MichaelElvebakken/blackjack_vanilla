@@ -1,0 +1,266 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: -ms-grid;
+  display: grid;
+}
+
+#message-display {
+  display: none;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: center;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  position: absolute;
+  background-color: #000000cc;
+}
+
+#message-display span {
+  width: 70%;
+  height: 50%;
+  margin: auto;
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 0;
+}
+
+#message-display h2 {
+  font-size: 5rem;
+  color: red;
+}
+
+#message-display input {
+  height: 6rem;
+  width: 12rem;
+  font-size: 2rem;
+  border: none;
+  background-color: #34d8eb;
+  outline: none;
+  color: white;
+}
+
+#start-screen {
+  position: absolute;
+  background-color: white;
+  border: 2px solid gray;
+  margin: auto;
+  padding: 2rem;
+  text-align: center;
+  display: -ms-grid;
+  display: grid;
+  gap: 1rem;
+  max-width: 30rem;
+  max-height: 35rem;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+}
+
+#start-screen input {
+  font-size: 1.8rem;
+  width: 80%;
+  margin: auto;
+  height: 2em;
+  text-align: center;
+}
+
+#bet-screen {
+  position: absolute;
+  background-color: white;
+  border: 2px solid gray;
+  margin: auto;
+  padding: 2rem;
+  text-align: center;
+  display: none;
+  gap: 1rem;
+  place-items: center;
+  max-width: 30rem;
+  max-height: 40rem;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+}
+
+#bet-screen #bet-range {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  gap: 1rem;
+}
+
+#bet-screen #bet-range .bet-range-span {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+#bet-screen #bet-range .bet-range-span img {
+  max-width: 100px;
+  max-height: 100px;
+  width: 100%;
+  height: auto;
+  min-width: 3.1rem;
+}
+
+#bet-screen #bet-range input[type="button"] {
+  max-width: 100px;
+  max-height: 100px;
+  width: 100%;
+  height: auto;
+  min-height: 3.1rem;
+  min-width: 3.1rem;
+  border: none;
+  background-color: #46a63d;
+  font-size: 2.5rem;
+  color: white;
+}
+
+#bet-screen #bet-size-input {
+  border: none;
+  border-bottom: 2px solid gray;
+  font-size: 2.3rem;
+  max-height: 2.5rem;
+  width: 70%;
+  text-align: center;
+}
+
+#bet-screen #bet-size-input:focus {
+  outline: none;
+}
+
+#bet-screen #bet-button {
+  width: 90%;
+  height: 4rem;
+  background-color: #46a63d;
+  border: none;
+  font-size: 2.5rem;
+  color: white;
+}
+
+#table {
+  width: 100%;
+  background-color: green;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  justify-self: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-line-pack: space-evenly;
+      align-content: space-evenly;
+  max-width: 1000px;
+  min-height: 90vh;
+  padding-bottom: 10vh;
+}
+
+#table .hand-images {
+  width: 100%;
+  max-height: 50%;
+}
+
+#table .hands {
+  width: 100%;
+  text-align: center;
+  margin: 1rem 0;
+}
+
+#table .hands img {
+  width: 20%;
+  max-height: 20%;
+  max-width: 7rem;
+}
+
+#table .hands h2 {
+  margin: 1rem;
+  color: white;
+}
+
+.player-options {
+  display: none;
+  place-items: center;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  position: absolute;
+  bottom: 1rem;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  width: 100%;
+  height: 10vh;
+  max-width: 1000px;
+}
+
+.player-options button {
+  border: 2px solid black;
+  max-width: 20rem;
+  font-size: 2rem;
+  width: 70%;
+  height: 100%;
+}
+
+#money-bet {
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 30%;
+}
+
+#money-bet h2 {
+  color: white;
+  font-size: 2rem;
+}
+
+#money-bet #new-bet-button {
+  display: none;
+  width: 10rem;
+  height: 5rem;
+  font-size: 2rem;
+  border: none;
+  background-color: #34d8eb;
+  outline: none;
+  color: white;
+}
+
+input[type="button"] {
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+input[type="button"]:active {
+  -webkit-transform: scale(0.9);
+          transform: scale(0.9);
+}
+/*# sourceMappingURL=style.css.map */

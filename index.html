@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Blackjack &#9824;</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <div id="message-display">
+        <span>
+            <h2>All Money Lost</h2>
+            <input type="button" onclick="newGame()" value="New Game">
+        </span>
+    </div>
+
+    <div id="start-screen">
+        <h2>How much money do you want to start with?</h2>
+        <input id="start-money-input" type="text">
+        <input type="button" onclick="game();" id="startButton" value="start">
+    </div>
+
+    <div id="bet-screen">
+        <h2>Total Money:</h2>
+        <h2 id="player-money-h2">1000$</h2>
+        <div id="bet-range">
+            <span class="bet-range-span"><input type="button" onclick="addMoneyToBet(1)" value="+"><img src="./chips/chip_1.png" alt="chip"><h2>1$</h2></span>
+            <span class="bet-range-span"><input type="button" onclick="addMoneyToBet(5)" value="+"><img src="./chips/chip_5.png" alt="chip"><h2>5$</h2></span>
+            <span class="bet-range-span"><input type="button" onclick="addMoneyToBet(10)" value="+"><img src="./chips/chip_10.png" alt="chip"><h2>10$</h2></span>
+            <span class="bet-range-span"><input type="button" onclick="addMoneyToBet(25)" value="+"><img src="./chips/chip_25.png" alt="chip"><h2>25$</h2></span>
+            <span class="bet-range-span"><input type="button" onclick="addMoneyToBet(50)" value="+"><img src="./chips/chip_50.png" alt="chip"><h2>50$</h2></span>
+        </div>
+        <input type="text" id="bet-size-input">
+        <input type="button" id="bet-button" value="BET" onclick="bet(document.querySelector('#bet-size-input').value)">
+</div>
+
+    <div id="table">
+
+            <div id="dealer-hand" class="hands" >
+                    <h2 id="dealer-card-counter">0</h2>
+                    <div class="hand-images">
+                        <img src="" id="card-dealer-1">
+                        <img src="" id="card-dealer-2">
+                        <img src="" id="card-dealer-3">
+                        <img src="" id="card-dealer-4">
+                        <img src="" id="card-dealer-5">
+                    </div>
+
+            </div>
+            <div id="money-bet">
+                <input type="button" id="new-bet-button" onclick="displayBetScreen()" value="New bet">
+                <h2 id="player-bet-h2"></h2>
+                <h2 id="player-money-h2"></h2>
+            </div>
+            <div id="player-hand" class="hands">
+                <div class="cards" id="player-cards">
+                    <h2 id="player-card-counter">0</h2>
+                    <div class="hand-images">
+                        <img src="" id="card-player-1">
+                        <img src="" id="card-player-2">
+                        <img src="" id="card-player-3">
+                        <img src="" id="card-player-4">
+                        <img src="" id="card-player-5">                
+                    </div>
+                </div>
+            </div>
+    </div>
+    <div class="player-options">
+        <button id="button-hit" onclick="hitCard()">HIT</button>
+        <button id="button-stand" onclick="stand()">STAND</button>
+    </div>    
+    <script src="index.js"></script>
+</body>
+</html>
