@@ -101,10 +101,9 @@ body {
     bottom: 0;
 
     #bet-range {
-        display: grid;
-        width: 100%;
+        display: flex;
         gap: 1rem;
-        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+        flex-direction: row;
         .bet-range-span {
             display: flex;
             flex-direction: column;
@@ -117,10 +116,10 @@ body {
             max-width: 100px;
             max-height: 100px;
             width: 100%;
-            height: auto;
+            height: 40px;
             border: none;
             background-color: #46a63d;
-            font-size: 2.5rem;
+            font-size: 1rem;
             color: white;
         }
 
@@ -143,10 +142,10 @@ body {
 
     #bet-button {
         width: 90%;
-        height: 4rem;
+        height: 50px;
         background-color: #46a63d;
         border: none;
-        font-size: 2.5rem;
+        font-size: 2rem;
         color: white;
     }
 }
