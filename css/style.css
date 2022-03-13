@@ -94,11 +94,12 @@ body {
 }
 
 #bet-screen #bet-range {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  display: -ms-grid;
+  display: grid;
   width: 100%;
   gap: 1rem;
+  -ms-grid-columns: 1fr 1fr 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
 }
 
 #bet-screen #bet-range .bet-range-span {
