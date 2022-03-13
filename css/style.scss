@@ -101,9 +101,10 @@ body {
     bottom: 0;
 
     #bet-range {
-        display: flex;
+        display: grid;
         width: 100%;
         gap: 1rem;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
         .bet-range-span {
             display: flex;
             flex-direction: column;
