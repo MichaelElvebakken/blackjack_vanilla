@@ -57,6 +57,9 @@ function addMoneyToBet (amount) {
 }
 
 function bet (betSize) {
+    if (betSize <= 0) {
+        return
+    }
     betSize = parseInt(betSize);
     if (betSize > playerMoney || isNaN(betSize)) {
         return
